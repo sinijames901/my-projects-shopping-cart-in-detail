@@ -1,0 +1,25 @@
+<section>
+    <div class="container">
+        <table class="table  table-warning mt-5">
+  <thead>
+    <tr  class="bg-danger">
+        <th scope="col">Id</th>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Password</th>
+        
+    </tr>
+  </thead>
+  <tbody>
+      {{#each Users}}
+    <tr> 
+      <td>{{this._id}}</td>
+      <td>{{this.Name}}</td>
+      <td>{{this.Email}}</td>
+      <td>{{this.Password}}</td>
+    </tr>
+    {{/each}}
+</table>
+    </div>
+</section>
+
